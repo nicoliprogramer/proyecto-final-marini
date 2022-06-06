@@ -8498,22 +8498,33 @@ article {
 .sale-item {
   display: flex;
   flex-flow: column;
-  border: 1px solid black;
+  border: 3px solid black;
   border-radius: 1rem;
-  padding: 2rem; }
+  padding: 2rem;
+  background-color: white;
+  color: black;
+  font-family: 'Alata', sans-serif;
+  font-family: 'Changa', sans-serif;
+  font-weight: bold; }
 
 .sale-item > h1, .sale-item > .h1 {
   margin: 1rem 1rem 0; }
+
+.sale-item > h4, .sale-item > .h4 {
+  font-weight: bold; }
 
 .sale-item > ul {
   margin: 0 0 1rem; }
 
 .sale-item > p {
-  margin: 0.25em 1rem 1rem; }
+  margin: 1.25em 1rem 1rem;
+  font-size: 21px; }
 
 .sale-item > img {
   order: -1;
-  align-self: center; }
+  align-self: center;
+  width: 440px !important;
+  margin-top: 20px; }
 
 .sale-item > button {
   margin-top: auto;
@@ -8609,8 +8620,8 @@ h5, .h5,
   color: black; }
 
 .carousel-indicators button {
-  color: black !important;
-  background-color: black !important; }
+  color: wheat !important;
+  background-color: white !important; }
 
 h1, .h1 {
   text-align: center; }
@@ -8658,3 +8669,6 @@ h2, .h2,
   padding-right: calc(var(--bs-gutter-x) * .5);
   padding-left: calc(var(--bs-gutter-x) * .5);
   margin-top: var(--bs-guztter-y); }
+
+carousel-caption h5, carousel-caption .h5 {
+  color: white !important; }
