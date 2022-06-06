@@ -8501,11 +8501,15 @@ article {
   border: 3px solid black;
   border-radius: 1rem;
   padding: 2rem;
-  background-color: white;
-  color: black;
+  background-image: url(../img/fondi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backface-visibility: initial;
+  color: white;
   font-family: 'Alata', sans-serif;
   font-family: 'Changa', sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  opacity: 0.9; }
 
 .sale-item > h1, .sale-item > .h1 {
   margin: 1rem 1rem 0; }
@@ -8523,17 +8527,21 @@ article {
 .sale-item > img {
   order: -1;
   align-self: center;
-  width: 440px !important;
-  margin-top: 20px; }
+  width: 440px !important; }
+
+.sale-item .logo-inicio {
+  order: -1;
+  align-self: center;
+  width: 255px !important; }
 
 .sale-item > button {
   margin-top: auto;
-  background: teal;
+  background: #008383;
   color: white;
-  padding: 0.5rem;
-  border: none;
+  padding: 0.4rem;
+  border: 1px transparent white;
   border-radius: 1rem;
-  font-size: 1.2rem; }
+  font-size: 1.3rem; }
 
 .sale-item img {
   width: 250px; }
@@ -8555,7 +8563,8 @@ article {
   float: left; }
 
 .rounded-full {
-  border-radius: 9999px; }
+  border-radius: 9999px;
+  width: 180px; }
 
 .resaltador {
   background-color: #ffffff;
@@ -8672,3 +8681,11 @@ h2, .h2,
 
 carousel-caption h5, carousel-caption .h5 {
   color: white !important; }
+
+.imagenes-demostrativas {
+  width: 200px; }
+
+h3, .h3 {
+  color: #FB925B;
+  font-weight: bold;
+  font-size: 23px; }
