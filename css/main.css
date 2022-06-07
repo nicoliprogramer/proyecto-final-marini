@@ -8454,7 +8454,7 @@ main {
   .container {
     text-align: center;
     color: white;
-    background-color: #ff8f3e;
+    background-color: #8BD3CB;
     padding: 3px;
     display: grid;
     grid-template-areas: "header header header" "nav nav nav" "main main aside" "footer footer footer"; }
@@ -8501,7 +8501,7 @@ article {
   border: 3px solid black;
   border-radius: 1rem;
   padding: 2rem;
-  background-image: url(../img/fondi.jpg);
+  background-image: url(../img/fondi.png);
   background-repeat: no-repeat;
   background-size: cover;
   backface-visibility: initial;
