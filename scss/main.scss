@@ -92,8 +92,13 @@ footer {
     }
 }
 
-.preparacion {
+.preparativos {
     text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family: 'Alata', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Changa', sans-serif;
 }
 
 main {
@@ -101,7 +106,7 @@ main {
 }
 
 .div-resaltador {
-    background-color: #009ce4;
+    background-color: rgb(0, 131, 131);
     text-align: center;
 }
 
@@ -132,6 +137,7 @@ main {
         padding: $alto;
         width: $ancho;
         margin: $margin;
+        text-align: center;
 
     }
 
@@ -184,7 +190,9 @@ main {
 
     .item-3 {
         @extend .item-1;
+        text-align: none;
     }
+
 }
 
 * {
@@ -206,6 +214,37 @@ article {
     margin: 1rem 0;
 }
 
+.us-deals {
+    .sale-item {
+
+        display: flex;
+        flex-flow: column;
+        flex-direction: c;
+        justify-content: center;
+        border: 3px solid black;
+        border-radius: 1rem;
+        padding: 2rem;
+        background-image: url(../img/fondi.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        backface-visibility: initial;
+        color: white;
+        font-family: 'Alata', sans-serif;
+        font-family: 'Changa', sans-serif;
+        font-weight: bold;
+        opacity: 0.9;
+    }
+}
+
+.sale-item-nosotros>img {
+    order: -1;
+    align-self: center;
+
+    border-style: inset;
+    border-radius: 10px 100px 10px;
+    margin-top: 300px;
+}
+
 /* Now lets do a Grid-based layout */
 
 @supports (display: grid) {
@@ -218,7 +257,7 @@ article {
         margin: 0;
     }
 
-    .deals {
+    .us-deals {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 1rem;
@@ -226,13 +265,15 @@ article {
 }
 
 .deals {
+    display: flex;
+    flex-wrap: wrap;
     font-family: Avenir, Roboto, Helvetica, san-serif;
     font-size: 80%;
 }
 
 .sale-item {
-    display: flex;
-    flex-flow: column;
+    flex: 50%;
+    justify-content: center;
     border: 3px solid black;
     border-radius: 1rem;
     padding: 2rem;
@@ -245,6 +286,8 @@ article {
     font-family: 'Changa', sans-serif;
     font-weight: bold;
     opacity: 0.9;
+
+
 }
 
 .sale-item>h1 {
@@ -262,21 +305,23 @@ article {
 .sale-item>p {
     margin: 1.25em 1rem 1rem;
     font-size: 21px;
+    color: black;
 }
 
 .sale-item>img {
     order: -1;
     align-self: center;
-    width: 440px !important;
+    border-style: inset;
+    border-radius: 100px 100px 50px;
 }
 
 .sale-item .logo-inicio {
-    order: -1;
-    align-self: center;
     width: 255px !important;
+    border: none;
+    border-radius: 0px 0px 0px;
 }
 
-.sale-item>button {
+.sale-item>.button {
     margin-top: auto;
     background: rgb(0, 131, 131);
     color: white;
@@ -392,7 +437,7 @@ h5,
     color: black;
 }
 
-.carousel-indicators button {
+.carousel-indicators .button {
     color: wheat !important;
     background-color: white !important;
 }
@@ -466,10 +511,58 @@ carousel-caption {
 
 .imagenes-demostrativas {
     width: 200px;
+    height: 133px;
 }
 
 h3 {
     color: #FB925B;
     font-weight: bold;
-    font-size: 23px;
+    font-size: 25px;
+}
+
+.sale-item-nosotros {
+    display: flex;
+    flex-flow: column;
+    border: 3px solid black;
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    backface-visibility: initial;
+    color: white;
+    font-family: 'Alata', sans-serif;
+    font-family: 'Changa', sans-serif;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.sale-item-nosotros>h1 {
+    margin: 1rem 1rem 0;
+}
+
+.sale-item-nosotros>h4 {
+    font-weight: bold;
+}
+
+.sale-item-nosotros>ul {
+    margin: 0 0 1rem;
+}
+
+.sale-item-nosotros>p {
+    margin: 1.25em 1rem 1rem;
+    font-size: 18px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgb(28, 24, 24);
+}
+
+.sale-item-nosotros>img {
+    order: -1;
+    align-self: center;
+
+    border-style: inset;
+    border-radius: 10px 100px 10px;
+    margin-top: 100px;
+}
+
+.sale-item-nosotros img {
+    width: 250px;
 }
